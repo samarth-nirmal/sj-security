@@ -1,104 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
-  <defs>
-    <!-- Background Gradients -->
-    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#021727" />
-      <stop offset="40%" stop-color="#082A45" />
-      <stop offset="100%" stop-color="#031625" />
-    </linearGradient>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 750" width="100%" height="100%">
+  <!-- Clean Light Neutral Grey Background -->
+  <rect width="600" height="750" fill="#ECEFF1" />
 
-    <radialGradient id="spotlight" cx="50%" cy="38%" r="65%">
-      <stop offset="0%" stop-color="#1B4D73" stop-opacity="0.5" />
-      <stop offset="55%" stop-color="#0A2C49" stop-opacity="0.25" />
-      <stop offset="100%" stop-color="#021422" stop-opacity="0" />
-    </radialGradient>
+  <!-- Avatar Silhouette Matching Uploaded Reference Image -->
+  <g fill="#59616D">
+    <!-- Head, Ears, Hair, Face and Neck Contour -->
+    <!-- Head with Styled Hair Silhouette (matching reference image) -->
+    <path d="
+      M 300 75
+      C 260 75, 215 88, 185 118
+      C 158 142, 144 176, 140 215
+      C 137 240, 139 265, 137 280
+      C 132 286, 124 294, 122 308
+      C 118 326, 120 348, 130 360
+      C 138 370, 148 374, 155 370
+      C 160 400, 175 440, 202 468
+      C 225 490, 256 505, 300 505
+      C 344 505, 375 490, 398 468
+      C 425 440, 440 400, 445 370
+      C 452 374, 462 370, 470 360
+      C 480 348, 482 326, 478 308
+      C 476 294, 468 286, 463 280
+      C 461 265, 463 240, 460 215
+      C 456 176, 442 142, 415 118
+      C 385 88, 340 75, 300 75
+      Z
+    " />
 
-    <linearGradient id="silhouetteGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#3A6C96" />
-      <stop offset="60%" stop-color="#1B3D5B" />
-      <stop offset="100%" stop-color="#0D2336" />
-    </linearGradient>
-
-    <linearGradient id="headGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#4F84AF" />
-      <stop offset="100%" stop-color="#24517A" />
-    </linearGradient>
-
-    <linearGradient id="redAccent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#C5222B" />
-      <stop offset="100%" stop-color="#E5383B" />
-    </linearGradient>
-
-    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#E2B743" />
-      <stop offset="100%" stop-color="#A57E12" />
-    </linearGradient>
-
-    <!-- Security grid watermark -->
-    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-width="0.75" stroke-opacity="0.04" />
-    </pattern>
-  </defs>
-
-  <!-- Background Canvas -->
-  <rect width="800" height="1000" fill="url(#bgGradient)" />
-  <rect width="800" height="1000" fill="url(#spotlight)" />
-  <rect width="800" height="1000" fill="url(#gridPattern)" />
-
-  <!-- Concentric Rings for Tactical / Military Depth -->
-  <circle cx="400" cy="380" r="260" fill="none" stroke="#C5222B" stroke-width="1.5" stroke-opacity="0.15" stroke-dasharray="8 8" />
-  <circle cx="400" cy="380" r="190" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.08" />
-  <circle cx="400" cy="380" r="130" fill="none" stroke="#C5222B" stroke-width="1" stroke-opacity="0.25" />
-
-  <!-- Corner Crosshair / Frame Accents -->
-  <path d="M 50 80 L 50 50 L 80 50" fill="none" stroke="#C5222B" stroke-width="2.5" stroke-opacity="0.6" />
-  <path d="M 750 80 L 750 50 L 720 50" fill="none" stroke="#C5222B" stroke-width="2.5" stroke-opacity="0.6" />
-  <path d="M 50 920 L 50 950 L 80 950" fill="none" stroke="#C5222B" stroke-width="2.5" stroke-opacity="0.4" />
-  <path d="M 750 920 L 750 950 L 720 950" fill="none" stroke="#C5222B" stroke-width="2.5" stroke-opacity="0.4" />
-
-  <!-- Executive / Officer Portrait Silhouette -->
-  <!-- Shoulders & Torso -->
-  <path d="M 150 820 C 165 680, 230 550, 310 515 L 350 545 L 400 585 L 450 545 L 490 515 C 570 550, 635 680, 650 820 Z" fill="url(#silhouetteGrad)" />
-
-  <!-- Neck & Collar -->
-  <polygon points="345,540 400,620 455,540 420,540 400,580 380,540" fill="#091E30" opacity="0.9" />
-  <!-- Tie with Red Accent -->
-  <polygon points="390,590 410,590 416,730 400,760 384,730" fill="url(#redAccent)" opacity="0.85" />
-  <!-- Shirt Collar Tips -->
-  <polygon points="375,540 400,580 388,615 365,555" fill="#E2E8F0" opacity="0.9" />
-  <polygon points="425,540 400,580 412,615 435,555" fill="#CBD5E1" opacity="0.9" />
-
-  <!-- Neck -->
-  <path d="M 355 470 L 355 535 C 380 555, 420 555, 445 535 L 445 470 Z" fill="url(#headGrad)" opacity="0.95" />
-
-  <!-- Head / Face Silhouette -->
-  <ellipse cx="400" cy="360" rx="95" ry="120" fill="url(#headGrad)" />
-
-  <!-- Military Lapel Shield Pin / Crest -->
-  <g transform="translate(500, 585)">
-    <path d="M 0 0 L 28 0 C 28 22, 14 36, 14 36 C 14 36, 0 22, 0 0 Z" fill="url(#goldAccent)" />
-    <path d="M 3.5 3.5 L 24.5 3.5 C 24.5 20, 14 31, 14 31 C 14 31, 3.5 20, 3.5 3.5 Z" fill="#032238" />
-    <circle cx="14" cy="14" r="5" fill="url(#goldAccent)" />
+    <!-- Neck and Shoulders / T-Shirt Silhouette -->
+    <path d="
+      M 232 470
+      C 230 510, 225 560, 215 600
+      C 238 615, 268 625, 300 625
+      C 332 625, 362 615, 385 600
+      C 375 560, 370 510, 368 470
+      C 405 485, 450 505, 492 528
+      C 545 555, 590 595, 600 655
+      L 600 750
+      L 0 750
+      L 0 655
+      C 10 595, 55 555, 108 528
+      C 150 505, 195 485, 232 470
+      Z
+    " />
   </g>
-
-  <!-- Photo Placeholder Center Icon -->
-  <g transform="translate(345, 305)">
-    <rect x="0" y="0" width="110" height="110" rx="55" fill="#021422" fill-opacity="0.82" stroke="#ffffff" stroke-width="2" stroke-opacity="0.35" />
-    <!-- Camera Icon -->
-    <path d="M 38 42 L 45 35 L 65 35 L 72 42 L 82 42 C 85 42, 88 45, 88 48 L 88 74 C 88 77, 85 80, 82 80 L 28 80 C 25 80, 22 77, 22 74 L 22 48 C 22 45, 25 42, 28 42 Z" fill="none" stroke="#E2E8F0" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" />
-    <circle cx="55" cy="61" r="13" fill="none" stroke="#E2E8F0" stroke-width="2.75" />
-    <circle cx="73" cy="49" r="2.5" fill="#C5222B" />
-  </g>
-
-  <!-- Central "Official Portrait Coming Soon" Pill -->
-  <g transform="translate(230, 490)">
-    <rect x="0" y="0" width="340" height="42" rx="21" fill="#021625" fill-opacity="0.92" stroke="#ffffff" stroke-width="1" stroke-opacity="0.25" />
-    <circle cx="26" cy="21" r="5" fill="#C5222B" />
-    <text x="180" y="27" font-family="'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#F1F5F9" letter-spacing="2" text-anchor="middle">
-      OFFICIAL PORTRAIT PENDING
-    </text>
-  </g>
-
-  <!-- Bottom Vignette -->
-  <rect x="0" y="800" width="800" height="200" fill="url(#bgGradient)" opacity="0.7" />
 </svg>
