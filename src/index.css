@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --sparc-dark: #0E3333;
+    --sparc-dark-hover: #174545;
+    --sparc-sage: #DFEAE3;
+    --sparc-sage-card: #DFEAE3;
+    --sparc-sage-light: #EDF3EE;
+    --sparc-sage-pill: #A1C6B4;
+    --sparc-sage-icon: #5B8B77;
+    --sparc-border: #D2DFD8;
+    --sparc-text: #0E3333;
+    --sparc-muted: #3D5A59;
+    --sparc-offwhite: #F8FAF8;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+    color: #0E3333;
+    background-color: #ffffff;
+  }
+
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Universal smooth interaction transitions across all controls */
+  a, button, [role="button"], input, select, textarea {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    transition-duration: 320ms;
+  }
+
+  /* Smooth SVG icon rotations and fills */
+  svg {
+    transition-property: color, fill, stroke, transform, opacity;
+    transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    transition-duration: 320ms;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: #0E3333;
+  }
+}
+
+/* Custom Sparc Group utilities */
+.bg-sparc-sage {
+  background-color: #DFEAE3;
+}
+
+.bg-sparc-sage-light {
+  background-color: #EDF3EE;
+}
+
+.bg-sparc-dark {
+  background-color: #0E3333;
+}
+
+.text-sparc-dark {
+  color: #0E3333;
+}
+
+.text-sparc-muted {
+  color: #3D5A59;
+}
+
+.border-sparc {
+  border-color: #D2DFD8;
+}
+
+.rounded-sparc-card {
+  border-radius: 28px;
+}
+
+.rounded-sparc-hero {
+  border-radius: 32px;
+}

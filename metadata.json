@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix SJ Security \u0026 Facilities Services",
+  "description": "Securing Today For A Safer Tomorrow. Premier Maharashtra-based private security and facilities management agency backed by disciplined military-veteran leadership and PSARA compliance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
